@@ -35,13 +35,13 @@ html {
     width: 100vw;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1440px) {
     .fixed-background-mobile {
         display: none;
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1400px) {
     .fixed-background-desktop {
         display: none;
     }
@@ -319,7 +319,7 @@ html {
     -webkit-text-fill-color: #0000;
 }
 
-  .container-footer {
+.container-footer {
     background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(20px);
     margin: auto;
@@ -394,6 +394,10 @@ html {
         }
       }
 
+    .block-line {
+        background-image: linear-gradient(45deg, rgba(128, 128, 128, 0), #40F8FF,#ffff00,#00ff00);
+    }
+
     .gallery-link {
         font-size: 1.5rem;
     }
@@ -404,6 +408,20 @@ html {
 
     .contact-link {
         font-size: 1.5rem;
+    }
+
+    .block-line-email {
+        background-image: linear-gradient(45deg, rgba(128, 128, 128, 0), #fb0094, #9400FF, #279EFF, #279EFF);
+    }
+
+    .bi-envelope-at {
+        fill: #279EFF;
+        margin-right: 25%;
+        width: 6%;
+    }
+
+    .container-footer {
+        background-color: rgba(255, 255, 255, 0.2);
     }
 
     .footer-logo {
@@ -488,7 +506,12 @@ html {
         margin-left: 50%;
     }
 
+    .block-line {
+        background-image: linear-gradient(45deg, rgba(128, 128, 128, 0), #40F8FF,#ffff00,#00ff00);
+    }
+
     .bi-send {
+        fill: #ffff00;
         width: 6%;
     }
 
@@ -501,7 +524,12 @@ html {
         font-size: 1.5rem;
     }
 
+    .block-line-email {
+        background-image: linear-gradient(45deg, rgba(128, 128, 128, 0), #fb0094, #9400FF, #279EFF, #279EFF);
+    }
+
     .bi-envelope-at {
+        fill: #279EFF;
         margin-right: 25%;
         width: 6%;
     }
@@ -511,6 +539,7 @@ html {
     }
 
     .container-footer {
+        background-color: rgba(255, 255, 255, 0.2);
         margin-top: 10%;
     }
 
