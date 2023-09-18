@@ -444,7 +444,7 @@ html {
 @media (max-width: 480px) {
 
     .cover-logo {
-        margin-bottom: 15%;
+        margin-bottom: 8%;
         margin-left: 0%;
         margin-top: 0%;
         width: 100%;
@@ -453,7 +453,7 @@ html {
     .flex-column {
         margin: auto;
         margin-bottom: 12%;
-        width: 90%;
+        width: 100%;
     }
 
     .image-container:after {
@@ -507,11 +507,11 @@ html {
     }
 
     .block-line {
-        background-image: linear-gradient(45deg, rgba(128, 128, 128, 0), #40F8FF,#ffff00,#00ff00);
+        background-image: linear-gradient(45deg, rgba(128, 128, 128, 0), #fb0094, #fb0094, #9400FF, #9400FF, #279EFF, #279EFF);
     }
 
     .bi-send {
-        fill: #ffff00;
+        fill: #9400FF;
         width: 6%;
     }
 
@@ -525,7 +525,7 @@ html {
     }
 
     .block-line-email {
-        background-image: linear-gradient(45deg, rgba(128, 128, 128, 0), #fb0094, #9400FF, #279EFF, #279EFF);
+        background-image: linear-gradient(45deg, rgba(128, 128, 128, 0), #fb0094, #fb0094, #fb0094, #9400FF, #9400FF, #9400FF, #279EFF, #279EFF, #279EFF);
     }
 
     .bi-envelope-at {
