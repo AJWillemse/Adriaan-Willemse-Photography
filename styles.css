@@ -412,7 +412,7 @@ html {
     .flex-column {
         margin: auto;
         margin-bottom: 12%;
-        width: 90%;
+        width: 50%;
     }
 
     .image-container:after {
@@ -432,10 +432,37 @@ html {
     }
 
     .overlay {
-        background-color: rgba(0, 0, 0, 0.5);
-        opacity: 1;
-    }
+        animation: fadeIn 15s ease-in infinite;
+      }
+    
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        25% {
+            opacity: 0.5;
+          }
+        50% {
+          opacity: 1;
+        }
+        75% {
+            opacity: 0.5;
+        }
+        85% {
+            opacity: 0;
+        }
+        90% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
+      }
 
+    .overlay-text {
+        font-size: 1.2rem;
+    }  
+    
     .gallery-link {
         font-size: 1.5rem;
         padding-bottom: 20%;
