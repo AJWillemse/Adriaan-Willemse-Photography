@@ -362,12 +362,14 @@ html {
 @media (min-width: 576px) and (max-width: 768px) {
 
     .container-contact-index {
-        margin-top: 3%;
+        position: fixed;
+        top: 5px;
+        z-index: 3;
     }
 
     .cover-logo {
         margin-left: 20%;
-        margin-top: 0;
+        margin-top: 15%;
         width: 80%;
     }
 
@@ -415,6 +417,10 @@ html {
         font-size: 1.5rem;
     }
 
+    .bi-send {
+        width: 7%;
+    }
+
     .container-footer {
         background-color: rgba(255, 255, 255, 0.2);
     }
@@ -431,7 +437,9 @@ html {
 @media (min-width: 481px) and (max-width: 575px) {
 
     .container-contact-index {
-        margin-top: 3%;
+        position: fixed;
+        top: 5px;
+        z-index: 3;
     }
 
     .contact-link-mail-index {
@@ -441,7 +449,7 @@ html {
     .cover-logo {
         margin-bottom: 8%;
         margin-left: 0%;
-        margin-top: 3%;
+        margin-top: 15%;
         width: 100%;
     }
 
@@ -505,6 +513,10 @@ html {
         margin-left: 50%;
     }
 
+    .bi-send {
+        width: 7%;
+    }
+
     .album-photo {
         margin-bottom: 5%;
         width: 100%;
@@ -527,7 +539,9 @@ html {
 @media (min-width: 300px) and (max-width: 480px) {
 
     .container-contact-index {
-        margin-top: 3%;
+        position: fixed;
+        top: 5px;
+        z-index: 3;
     }
 
     .contact-link-mail-index {
@@ -537,7 +551,7 @@ html {
     .cover-logo {
         margin-bottom: 8%;
         margin-left: 0%;
-        margin-top: 3%;
+        margin-top: 15%;
         width: 100%;
     }
 
@@ -598,7 +612,11 @@ html {
     .gallery-link {
         font-size: 1.8rem;
         padding-bottom: 20%;
-        margin-left: 45%;
+        margin-left: 40%;
+    }
+
+    .bi-send {
+        width: 7%;
     }
 
     .album-photo {
