@@ -34,13 +34,13 @@ html {
     width: 100vw;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 769px) {
     .fixed-background-mobile {
         display: none;
     }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 768px) {
     .fixed-background-desktop {
         display: none;
     }
@@ -55,27 +55,16 @@ html {
     width: 90%;
 }
 
-.bi-envelope-at-index {
-    fill: #626262dc;
-    height: 44px;
-    margin-left: 65%;
-    width: 44px
+.contact-link-mail-index {
+    margin-left: 60%;
+    margin-right: 2%;
 }
 
-.bi-envelope-at-index:hover {
-    fill: #fb0094;
-    transform: scale(1.2);
+.svg-icon {
+    transition: transform 0.6s ease;
 }
 
-.bi-whatsapp-index {
-    fill: #626262dc;
-    height: 40px;
-    margin-left: 2%;
-    width: 40px;
-}
-
-.bi-whatsapp-index:hover {
-    fill: #00ff00;
+.svg-icon:hover {
     transform: scale(1.2);
 }
 
@@ -312,44 +301,8 @@ html {
     z-index: 1;
 }
 
-.contact-link {
-    font-family: "Neuropol X W00 Expanded Bold";
-    font-size: 2.2rem;
-    text-decoration: none;
-}
-
-.bi-envelope-at {
-    margin-right: 12%;
-}
-
-.rainbow-text-whatsapp .block-line-whatsapp > span {
-	display: inline-block;
-    margin-top: 0;
-}
-
-.block-line-whatsapp {
-    background-clip: text;
-	background-image: linear-gradient(45deg, rgba(128, 128, 128, 0), #54B435, #A2FF86, #54B435);
-	color: #0000;
-	-webkit-background-clip: text;
-	animation: animatedBackground_a 12s linear infinite alternate;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: #0000;
-}
-
-.rainbow-text-email .block-line-email > span {
-	display: inline-block;
-    margin-top: 0;
-}
-
-.block-line-email {
-    background-clip: text;
-	background-image: linear-gradient(45deg, rgba(128, 128, 128, 0), #fb0094, #9400FF, #fb0094);
-	color: #0000;
-	-webkit-background-clip: text;
-	animation: animatedBackground_a 12s linear infinite alternate;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: #0000;
+.contact-link-mail {
+    margin-right: 20%;
 }
 
 .container-footer {
@@ -386,31 +339,40 @@ html {
 
 
 
-@media (min-width: 768px) and (max-width: 1024px) {
+
+
+
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+
+    .contact-link-mail-index {
+        margin-left: 80%;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+
+    .contact-link-mail-index {
+        margin-left: 80%;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
 
     .container-contact-index {
         margin-top: 3%;
     }
 
-    .bi-envelope-at-index {
-        fill: #fb0094;
-        height: 38px;
-        margin-left: 65%;
-        width: 38px
-    }
-    
-    .bi-whatsapp-index {
-        fill: #00ff00;
-        height: 34px;
-        margin-left: 5%;
-        width: 34px;
+    .cover-logo {
+        margin-left: 20%;
+        margin-top: 0;
+        width: 80%;
     }
 
-    .cover-logo {
-        margin-bottom: 0;
-        margin-left: 30%;
-        margin-top: 0;
-        width: 70%;
+    .contact-link-mail-index {
+        margin-left: 75%;
     }
 
     .flex-column {
@@ -446,29 +408,11 @@ html {
       }
 
     .block-line {
-        background-image: linear-gradient(45deg, rgba(128, 128, 128, 0), #40F8FF,#ffff00,#00ff00);
+        background-image: linear-gradient(45deg, rgba(128, 128, 128, 0), #fb0094, #fb0094, #9400FF, #9400FF, #279EFF, #279EFF);
     }
 
     .gallery-link {
         font-size: 1.5rem;
-    }
-
-    .bi-send {
-        width: 4%;
-    }
-
-    .contact-link {
-        font-size: 1.5rem;
-    }
-
-    .block-line-email {
-        background-image: linear-gradient(45deg, rgba(128, 128, 128, 0), #fb0094, #9400FF, #279EFF, #279EFF);
-    }
-
-    .bi-envelope-at {
-        fill: #279EFF;
-        margin-right: 25%;
-        width: 6%;
     }
 
     .container-footer {
@@ -484,38 +428,20 @@ html {
     }
 }
 
-
-
-
-
-
-
-
-
-@media (max-width: 480px) {
+@media (min-width: 481px) and (max-width: 575px) {
 
     .container-contact-index {
         margin-top: 3%;
     }
 
-    .bi-envelope-at-index {
-        fill: #fb0094;
-        height: 38px;
-        margin-left: 65%;
-        width: 38px
-    }
-    
-    .bi-whatsapp-index {
-        fill: #00ff00;
-        height: 34px;
-        margin-left: 5%;
-        width: 34px;
+    .contact-link-mail-index {
+        margin-left: 70%;
     }
 
     .cover-logo {
         margin-bottom: 8%;
         margin-left: 0%;
-        margin-top: 0%;
+        margin-top: 3%;
         width: 100%;
     }
 
@@ -540,6 +466,10 @@ html {
 		    background-position: 0 0;
 	    }
     }
+
+    .overlay-text {
+        font-size: 2rem;
+      }
 
     .overlay {
         animation: fadeIn 15s ease-in infinite;
@@ -570,41 +500,14 @@ html {
       }
     
     .gallery-link {
-        font-size: 1.5rem;
+        font-size: 2rem;
         padding-bottom: 20%;
         margin-left: 50%;
-    }
-
-    .block-line {
-        background-image: linear-gradient(45deg, rgba(128, 128, 128, 0), #fb0094, #fb0094, #9400FF, #9400FF, #279EFF, #279EFF);
-    }
-
-    .bi-send {
-        fill: #9400FF;
-        width: 6%;
     }
 
     .album-photo {
         margin-bottom: 5%;
         width: 100%;
-    }
-
-    .contact-link {
-        font-size: 1.5rem;
-    }
-
-    .block-line-email {
-        background-image: linear-gradient(45deg, rgba(128, 128, 128, 0), #fb0094, #fb0094, #fb0094, #9400FF, #9400FF, #9400FF, #279EFF, #279EFF, #279EFF);
-    }
-
-    .bi-envelope-at {
-        fill: #279EFF;
-        margin-right: 25%;
-        width: 6%;
-    }
-
-    .bi-whatsapp {
-        width: 6%;
     }
 
     .container-footer {
@@ -619,4 +522,106 @@ html {
     .footer-text {
         font-size: 0.8rem;
     }
+}
+
+@media (min-width: 300px) and (max-width: 480px) {
+
+    .container-contact-index {
+        margin-top: 3%;
+    }
+
+    .contact-link-mail-index {
+        margin-left: 70%;
+    }
+
+    .cover-logo {
+        margin-bottom: 8%;
+        margin-left: 0%;
+        margin-top: 3%;
+        width: 100%;
+    }
+
+    .flex-column {
+        margin: auto;
+        margin-bottom: 12%;
+        width: 100%;
+    }
+
+    .image-container:after {
+	    filter: blur(15px);
+    }
+
+    @keyframes animate {
+	    0% {
+		    background-position: 0 0;
+	    }
+	    50% {
+		    background-position: 300% 0;
+	    }
+	    100% {
+		    background-position: 0 0;
+	    }
+    }
+
+    .overlay-text {
+        font-size: 1.8rem;
+      }
+
+    .overlay {
+        animation: fadeIn 15s ease-in infinite;
+      }
+    
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        25% {
+            opacity: 0.5;
+          }
+        50% {
+          opacity: 1;
+        }
+        75% {
+            opacity: 0.5;
+        }
+        85% {
+            opacity: 0;
+        }
+        90% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
+      }
+    
+    .gallery-link {
+        font-size: 1.8rem;
+        padding-bottom: 20%;
+        margin-left: 45%;
+    }
+
+    .album-photo {
+        margin-bottom: 5%;
+        width: 100%;
+    }
+
+    .contact-link-mail {
+        margin-right: 60%;
+    }
+
+    .container-footer {
+        background-color: rgba(255, 255, 255, 0.2);
+        margin-top: 10%;
+    }
+
+    .footer-logo {
+        width: 70%;
+    }
+    
+    .footer-text {
+        font-size: 0.8rem;
+    }
+
+
 }
