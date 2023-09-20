@@ -141,10 +141,10 @@ html {
     background-size: 600%;
     border-radius: 50%;
     content: "";
-    height: calc(100% + 8px);
+    height: calc(100% + 12px);
     opacity: 0.5;
     position: absolute;
-    width: calc(100% + 8px);
+    width: calc(100% + 12px);
     z-index: 1;
 }
   
