@@ -102,7 +102,7 @@ html {
 }
   
 .cover-photo {
-    border-radius: 10px;
+    border-radius: 50%;
     width: 100%;
     z-index: 2;
 }
@@ -139,7 +139,7 @@ html {
     animation: animate 60s linear infinite;
     background: var(--gradient-shadow);
     background-size: 600%;
-    border-radius: 10px;
+    border-radius: 50%;
     content: "";
     height: calc(100% + 8px);
     opacity: 0.5;
@@ -165,7 +165,7 @@ html {
 }
   
 .overlay {
-    border-radius: 10px;
+    border-radius: 50%;
     position: absolute;
     top: 0;
     left: 0;
