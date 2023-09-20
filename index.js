@@ -1,19 +1,3 @@
-$(document).ready(function() {
-    var $div = $("#galleryLink");
-    var $link = $("#galleryIcon");
-  
-    setTimeout(function() {
-        $div.css("opacity", 1);
-        $link.addClass("shake");
-    }, 1000000);
-    
-    $link.on("click", function() {
-        $link.removeClass("shake");
-    });
-});
-
-
-
 function openPreview(imageSrc) {
     var previewImage = document.getElementById('previewImage');
     previewImage.src = imageSrc;
@@ -148,8 +132,8 @@ function openPreview(imageSrc) {
             const percentageX = (this.mousePositions.x - left) / width;
             const percentageY = (this.mousePositions.y - top) / height;
             // x or y position inside instance / width of instance = percentage of position inside instance * the max tilt value
-            const tiltX = ((this.settings.maxTilt / 4) - ((percentageX) * this.settings.maxTilt)).toFixed(2);
-            const tiltY = (((percentageY) * this.settings.maxTilt) - (this.settings.maxTilt / 4)).toFixed(2);
+            const tiltX = ((this.settings.maxTilt / 2) - ((percentageX) * (this.settings.maxTilt / 2))).toFixed(2);
+            const tiltY = (((percentageY) * (this.settings.maxTilt / 2)) - (this.settings.maxTilt / 4)).toFixed(2);
             // angle
             const angle = Math.atan2(this.mousePositions.x - (left+width/2),- (this.mousePositions.y - (top+height/2)) )*(180/Math.PI);
             // Return x & y tilt values
@@ -179,7 +163,7 @@ function openPreview(imageSrc) {
                 // Rotate glare if enabled
                 if (this.settings.glare){
                     this.glareElement.css('transform', `rotate(${this.transforms.angle}deg) translate(-50%, -50%)`);
-                    this.glareElement.css('opacity', `${this.transforms.percentageY * this.settings.maxGlare / 100}`);
+                    this.glareElement.css('opacity', `${this.transforms.percentageY * this.settings.maxGlare}`);
                 }
             }
   
@@ -298,8 +282,8 @@ function openPreview(imageSrc) {
                 disableAxis: $(this).is('[data-tilt-disable-axis]') ? $(this).data('tilt-disable-axis') : null,
                 axis: $(this).is('[data-tilt-axis]') ? $(this).data('tilt-axis') : null,
                 reset: $(this).is('[data-tilt-reset]') ? $(this).data('tilt-reset') : true,
-                glare: $(this).is('[data-tilt-glare]') ? $(this).data('tilt-glare') : false,
-                maxGlare: $(this).is('[data-tilt-maxglare]') ? $(this).data('tilt-maxglare') : 1,
+                glare: $(this).is('[data-tilt-glare]') ? $(this).data('tilt-glare') : true, // Enable glare
+                maxGlare: $(this).is('[data-tilt-maxglare]') ? $(this).data('tilt-maxglare') : 0.5, // Set glare intensity
             }, options);
   
             // Add deprecation warning & set disableAxis to deprecated axis setting
